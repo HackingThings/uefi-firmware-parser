@@ -183,8 +183,7 @@ class FlashDescriptor(FirmwareObject):
         return True
 
     def showinfo(self, ts='', index=None):
-        print("%s%s chips 0x%02x, regions 0x%02x, masters 0x%02x, PCH straps 0x%02x, "
-                "PROC straps 0x%02x, ICC entries 0x%02x" % (
+        print("%s%s chips 0x%02x, regions 0x%02x, masters 0x%02x, PCH straps 0x%02x, PROC straps 0x%02x, ICC entries 0x%02x".format(
             ts, blue("Flash Descriptor (Intel PCH)"),
             self.map.structure.NumberOfFlashChips,
             self.map.structure.NumberOfRegions,
